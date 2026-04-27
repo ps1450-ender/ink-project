@@ -1,0 +1,77 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Crystal of Time</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="outerContainer">
+        <h3 class="written-in-ink">HALCYON TEMPORAL INTERFACE</h3>
+
+        <div id="controls" class="buttons">
+          <a id="rewind" title="Restart story from beginning">restart</a>
+          <a id="save" title="Save progress">save</a>
+          <a id="reload" title="Reload from save point">load</a>
+          <a id="hover-toggle" title="Enable or disable image hover previews">hover</a>
+          <a id="theme-switch" title="Switch theme">theme</a>
+        </div>
+
+        <aside id="trust-panel" class="trust-panel">
+            <div class="trust-panel-title">Trust Factors</div>
+            <div class="trust-panel-row">
+                <span class="trust-label">Kurisu</span>
+                <span id="trust-kurisu-value" class="trust-value">0</span>
+            </div>
+            <div class="trust-panel-row">
+                <span class="trust-label">Daru</span>
+                <span id="trust-daru-value" class="trust-value">0</span>
+            </div>
+            <div class="trust-panel-row">
+                <span class="trust-label">Suspicion</span>
+                <span id="suspicion-value" class="trust-value">0</span>
+            </div>
+            <div class="trust-panel-row">
+                <span class="trust-label">Memory Bleed</span>
+                <span id="memory-bleed-value" class="trust-value">0</span>
+            </div>
+            <div class="trust-panel-row">
+                <span class="trust-label">Anchor Hint</span>
+                <span id="anchor-hint-value" class="trust-value">0</span>
+            </div>
+            <div class="trust-panel-divider"></div>
+            <div id="trust-guidance" class="trust-guidance">
+                Build trust with Kurisu and Daru before pushing deeper into the loop.
+            </div>
+        </aside>
+
+        <div id="story" class="container">
+            <div class="header">
+                <h1>Crystal of Time</h1>
+                <h2 class="byline"></h2>
+            </div>
+        </div>
+
+        <aside id="hover-card" class="hover-card hidden" aria-hidden="true">
+            <div class="hover-card-frame">
+                <img id="hover-card-image" alt="" />
+            </div>
+            <div class="hover-card-copy">
+                <div id="hover-card-title" class="hover-card-title"></div>
+                <div id="hover-card-subtitle" class="hover-card-subtitle"></div>
+            </div>
+        </aside>
+    </div>
+
+    <script src="ink.js"></script>
+    <script src="time_loop_lab.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
